@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HSBC</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="resources/sweetalert2/sweetalert2.min.css"/>
+  <link rel="stylesheet" href="../styles/styles_hsbc.css"/>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <div class="text-center">
+                <img src="../resources/hsbc-logo.png" style="height: 50px;" />
+              </div>
+              
+              <hr>
+              <h2 class="text-center mb-4">Bienvenido a HSBC</h2>
+              <div class="form-group">
+                <label for="banco">Banco</label>
+                <select class="form-control" id="bancoSelected">
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="numeroTarjeta">Número de Tarjeta</label>
+                <input type="number" class="form-control" id="txtNumeroTarjeta" maxlength="4" />
+                <a id="lblValidarCuenta" style="color: red;"></a>
+              </div>
+              <div class="form-group">
+                <label for="nip">NIP</label>
+                <input type="password" class="form-control" id="txtNip" maxlength="4" />
+                <a id="lblValidarNip" style="color: red;"></a>
+              </div>
+              <div class="form-group">
+                <label for="monto">Monto</label>
+                <input type="text" class="form-control" id="txtMonto" placeholder="$0,000.00" />
+                <a id="lblValidarMonto" style="color: red;"></a>
+              </div>
+              <button id="btnRetirar" type="button" class="btn btn-primary btn-block" onclick="realizarRetiro();">Retirar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="resources/sweetalert2/sweetalert2.min.js"></script>
+  <script src="../scripts/main.js"></script>
+
+</body>
+</html>

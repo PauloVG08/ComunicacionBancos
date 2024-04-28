@@ -1,0 +1,18 @@
+body {
+    background-color: #FDE519;
+    /* Color de fondo suave */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Sombra suave para la tarjeta */
+}
+
+#bancoSelected {
+    background-color: #086DB6;
+    color: white;
+}
+
+#btnRetirar {
+    background-color: #086DB6;
+}
